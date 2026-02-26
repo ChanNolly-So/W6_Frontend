@@ -16,12 +16,23 @@ function Scores({courseName,courseResults}) {
             <tr key={index}>
               <td>{result.firstName}</td>
               <td>{result.lastName}</td>
-              <td>{result.score}</td>
+              <td className={Warning(result.score)} >
+                {result.score}  
+              </td>
                 </tr>
             ))}
             </tbody>
           </table>
-        </div>
-    );
+        </div>)
+        function Warning(score) {
+            
+            if (score <50) {
+                return "warning";
+            } else {
+                return;
+            }
+        
+        }
+   
 }
     export default Scores;
