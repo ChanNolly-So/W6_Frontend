@@ -2,6 +2,7 @@
 import Header from "./components/Header";
 import Scores from "./components/Scores"
 import { HTML_RESULTS} from "./data";
+import Statistic from "./components/Statistic";
 
 function App() {
   return (

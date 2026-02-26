@@ -1,3 +1,4 @@
+import Statistic from "./Statistic";
 function Scores({courseName,courseResults}) {
     return (
         <div className="scores">
@@ -23,6 +24,8 @@ function Scores({courseName,courseResults}) {
             ))}
             </tbody>
           </table>
+           <Statistic courseResults={courseResults} />
+
         </div>)
         function Warning(score) {
             
